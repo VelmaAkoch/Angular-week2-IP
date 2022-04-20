@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
+## Technologies Used
+Angular CLI
+Node
+TypeScript
+HTML
+CSS
+JavaScript
+
+## Bugs
+There are no Bugs
+
+## Contributors
+Velma Mukanga
+
+## Link
+https://github.com/VelmaAkoch/Angular-week2-IP.git
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
