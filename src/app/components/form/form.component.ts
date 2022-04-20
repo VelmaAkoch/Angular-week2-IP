@@ -31,6 +31,8 @@ export class FormComponent implements OnInit {
   // }
 
  onSubmit(f: NgForm){
+  this.isForm= false;
+  this.isUser= true;
 
  }
 
