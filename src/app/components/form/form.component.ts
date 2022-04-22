@@ -26,14 +26,14 @@ export class FormComponent implements OnInit {
   newUserData :any = []; 
   repoDetails= []
   userData = {
-    name: "",
+    login: "",
     avatar_url: "",
     created_at: "",
-    updated_at: ""
+    html_url: ""
 
   }
 
- onSubmit(f: NgForm){
+ onSubmit(f: any){
   this.repoData.length = 0;
 
   interface usersResponse{
@@ -42,19 +42,19 @@ export class FormComponent implements OnInit {
     name: string;
     public_repos: string;
     created_at: string;
-    updated_at: string;
+    html_url: string;
   }
-  this.http.get<usersResponse>('https://api.github.com/users/' +this.user    
+  this.http.get<usersResponse>('https://api.github.com/users/' + this.user    
     ).toPromise().then(response=>{
       console.log(response)
      this.user= response!.avatar_url
      this.user= response!.login
      this.user= response!.name 
      this.public_repos= response!.public_repos
-     this.userData.name= response!.name
+     this.userData.login= response!.login
      this.userData.avatar_url= response!.avatar_url 
      this.userData.created_at= response!.created_at
-     this.userData.updated_at= response!.updated_at
+     this.userData.html_url= response!.html_url
 
     })
     this.http.get<any>("https://api.github.com/users/" + this.user + "/repos").toPromise().then(response=>{
@@ -70,7 +70,7 @@ export class FormComponent implements OnInit {
     })
  
 
-  this.isForm= false;
+  // this.isForm= false;
   this.isUser= true;
  }
 
@@ -80,6 +80,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {
   this.repoDetails= this.repoData
+  // this.onSubmit("VelmaAkoch");
 
 }
 
