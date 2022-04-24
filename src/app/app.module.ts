@@ -6,12 +6,14 @@ import { FormComponent } from './components/form/form.component';
 import { FormsModule,NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     NotFoundComponent,
+    NavbarComponent,
   
   
   ],
