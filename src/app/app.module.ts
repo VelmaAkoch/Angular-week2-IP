@@ -7,7 +7,6 @@ import { FormsModule,NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { PipesComponent } from './components/pipes/pipes.component';
     FormComponent,
     NotFoundComponent,
     NavbarComponent,
-    PipesComponent,
   
   
   ],
